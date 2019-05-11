@@ -47,7 +47,7 @@ public class ChildController : MonoBehaviour
 
     public void Jump(float x)
     {
-        if (_isJumping || _isWaitingToJump)
+        if (_isJumping)
             return;
 
         _jumpPos = x;
