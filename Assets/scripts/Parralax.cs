@@ -9,6 +9,6 @@ public class Parralax : MonoBehaviour
 
     void FixedUpdate()
     {
-        transform.Translate(new Vector2(Speed * Time.deltaTime, 0));
+        transform.Translate(new Vector2(-Speed * Time.deltaTime, 0));
     }
 }
