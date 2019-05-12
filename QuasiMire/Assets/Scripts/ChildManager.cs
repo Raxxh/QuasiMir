@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class ChildManager : MonoBehaviour
 {
-    public GameObject ChildObject;
+    public List<GameObject> ChildObject = new List<GameObject>();
     public int ChildrenCount = 5;
 
     public float MinSpawnX = 1.5f;
@@ -20,7 +20,7 @@ public class ChildManager : MonoBehaviour
     void Start()
     {
         for (int i = 0; i < ChildrenCount; ++i)
-            _children.Add(Instantiate(ChildObject, new Vector3(UnityEngine.Random.Range(MinSpawnX, MaxSpawnX), SpawnY, UnityEngine.Random.Range(-1f, 1f)), Quaternion.identity, transform));
+            _children.Add(Instantiate(ChildObject[UnityEngine.Random.Range(0, ChildObject.Count)], new Vector3(UnityEngine.Random.Range(MinSpawnX, MaxSpawnX), SpawnY, UnityEngine.Random.Range(-1f, 1f)), Quaternion.identity, transform));
     }
 
     void Update()

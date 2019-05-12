@@ -19,12 +19,13 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4176244454723798}
-  - component: {fileID: 212649152026208258}
   - component: {fileID: 114368915296434668}
   - component: {fileID: 61369259329031878}
   - component: {fileID: 50248396104354776}
+  - component: {fileID: 212991259057155868}
+  - component: {fileID: 95132731012993982}
   m_Layer: 0
-  m_Name: Child
+  m_Name: CouetteCouette
   m_TagString: Child
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38,7 +39,7 @@ Transform:
   m_GameObject: {fileID: 1149359276954198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3279526, y: 0.3279526, z: 0.3279526}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,19 +76,36 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.13503361, y: -0.49105525}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.3, y: 2.19}
+    oldSize: {x: 14.3, y: 14.18}
     newSize: {x: 2.3, y: 2.19}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.3, y: 2.19}
+  m_Size: {x: 5.5408, y: 8.052498}
   m_EdgeRadius: 0
+--- !u!95 &95132731012993982
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1149359276954198}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ffdad7a5f22c1df46a0612807402d77f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114368915296434668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70c88a3de9fb6a2448070d576857f98f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!212 &212649152026208258
+--- !u!212 &212991259057155868
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -133,7 +151,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f93249629969cf142b8c589be5c583af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c7ec3eb361817bd4595c520b6d40e235, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

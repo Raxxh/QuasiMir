@@ -15,11 +15,14 @@ public class ChildController : MonoBehaviour
     private float _sprintDest;
 
     private Rigidbody2D _rb;
+    private Animator animator;
 
     void Start()
     {
         _posCenter = GameObject.Find("ChildrenCenter").transform;
         _rb = GetComponent<Rigidbody2D>();
+
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -42,6 +45,7 @@ public class ChildController : MonoBehaviour
             _speed = 0f;
 
         transform.Translate(new Vector2(_speed, 0f));
+        animator.SetBool("IsGrounded", IsGrounded());
     }
 
     private float GetSprintDest()
